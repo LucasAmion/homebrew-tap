@@ -1,25 +1,25 @@
 class Wizlight < Formula
   desc "Async client for Philips WiZ smart bulbs over the local UDP protocol, plus the wizlight CLI"
   homepage "https://github.com/LucasAmion/wizlight-rs"
-  version "0.1.0-alpha.4"
+  version "0.1.0-beta.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0-alpha.4/wizlight-aarch64-apple-darwin.tar.xz"
-      sha256 "106d1725140b6e2a01ff6c9da1feb0a00fff431575d7ce6e60df88255f929de1"
+      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0-beta.1/wizlight-aarch64-apple-darwin.tar.xz"
+      sha256 "4a64e6dde8e0e963a2e3b58d71d94b619669eb10b83b7a79571f8a91c9107af1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0-alpha.4/wizlight-x86_64-apple-darwin.tar.xz"
-      sha256 "8042e3d8666967654d8c498029a0b8d1ae1648935a22ace9a17832c4ecbbaef8"
+      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0-beta.1/wizlight-x86_64-apple-darwin.tar.xz"
+      sha256 "175c7f6fb15033ac002813fc8532679a998f724dd7afc542c7216d6b6ef54c78"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0-alpha.4/wizlight-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "b584492a9f107cc3dcf1c3bf8db2de6c542aca9223643455958c31b0e857c7dc"
+      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0-beta.1/wizlight-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "a1c9cfa72af238e531ef42ae862f89c94ac6093f7603232c56d740bac7964f68"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0-alpha.4/wizlight-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "c6b9aea3b93f658188959d9bda46b3f7b443c7d692fedc82ed53d458a0835ad3"
+      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0-beta.1/wizlight-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "8a4565e831a823f94eafe14b086f88c6abca748d7fbe2f2d5c070b7ce6e60b7a"
     end
   end
   license "MIT"
