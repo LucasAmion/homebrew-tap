@@ -1,25 +1,25 @@
 class Wizlight < Formula
   desc "Async client for Philips WiZ smart bulbs over the local UDP protocol, plus the wizlight CLI"
   homepage "https://github.com/LucasAmion/wizlight-rs"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0/wizlight-aarch64-apple-darwin.tar.xz"
-      sha256 "ec7f77f8ba24444e10201c07c0bf9ba3e14b7b662921cdbe599964028dc6c83f"
+      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.1/wizlight-aarch64-apple-darwin.tar.xz"
+      sha256 "6b3673714ded3cc7157c66c6631720be204cb605d44b1d759080257ff4abdc1b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0/wizlight-x86_64-apple-darwin.tar.xz"
-      sha256 "32ca4e46b204275045f544c1f6b45b988266ab5917381abce3cf438cf166c6a2"
+      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.1/wizlight-x86_64-apple-darwin.tar.xz"
+      sha256 "5128c4cfefb1a5af2916f5d2a845bb7fd8b6ba982de68026decc8908b037f590"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0/wizlight-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "76891d674ff039f806998a057ca3514f2c0a9a859eee08974c5c26ee06599abd"
+      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.1/wizlight-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "2c53c4c0d1b689eb5e7263a5af63864531c8cf03805c0e02b4e9cc389b7dc864"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0/wizlight-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "63d7a35984be269dc13a191e079d011119be8f20ecb164a65c5cb09e1107a910"
+      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.1/wizlight-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "a767c88e4506dc4e577afc4d1c17076a04ac3beee33608190684132f2002e996"
     end
   end
   license "MIT"
