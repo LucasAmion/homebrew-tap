@@ -1,25 +1,25 @@
 class Wizlight < Formula
   desc "Async client for Philips WiZ smart bulbs over the local UDP protocol, plus the wizlight CLI"
   homepage "https://github.com/LucasAmion/wizlight-rs"
-  version "0.1.0-rc.1"
+  version "0.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0-rc.1/wizlight-aarch64-apple-darwin.tar.xz"
-      sha256 "e26b58eab06eb30998b8f87f6f8ff47f24b231554ab1557b66599e34f0c39008"
+      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0/wizlight-aarch64-apple-darwin.tar.xz"
+      sha256 "ec7f77f8ba24444e10201c07c0bf9ba3e14b7b662921cdbe599964028dc6c83f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0-rc.1/wizlight-x86_64-apple-darwin.tar.xz"
-      sha256 "cb5784a0b272b67ec277e928224ac8dd308ab5dbee31c2b0f56de69f27977aaf"
+      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0/wizlight-x86_64-apple-darwin.tar.xz"
+      sha256 "32ca4e46b204275045f544c1f6b45b988266ab5917381abce3cf438cf166c6a2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0-rc.1/wizlight-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "118f2dd392dd4923669705ae5a2a181ffda9951404f06a9719a6e0f7137619ab"
+      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0/wizlight-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "76891d674ff039f806998a057ca3514f2c0a9a859eee08974c5c26ee06599abd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0-rc.1/wizlight-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "5028f2ea28df862ab83695df3fee2458199b24444968efda09a89ffd0e12f8c3"
+      url "https://github.com/LucasAmion/wizlight-rs/releases/download/v0.1.0/wizlight-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "63d7a35984be269dc13a191e079d011119be8f20ecb164a65c5cb09e1107a910"
     end
   end
   license "MIT"
